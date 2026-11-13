@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Muhammad Azhar | My Portfolio</title>
+
+<style>
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #081b29;
+    color: white;
+}
+
+/* Navigation */
+header {
+    background: #05131e;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00eeff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00eeff;
+}
+
+/* Home Section */
+.home {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 8%;
+    gap: 40px;
+}
+
+.home-text {
+    max-width: 550px;
+}
+
+.home-text h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.home-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.home-text h1 span {
+    color: #00eeff;
+}
+
+.home-text h2 {
+    color: #00eeff;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    color: #c7d5df;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 30px;
+    background: #00eeff;
+    color: #081b29;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    box-shadow: 0 0 20px #00eeff;
+}
+
+/* Profile Picture */
+.home-img img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #00eeff;
+    box-shadow: 0 0 30px #00eeff;
+}
+
+/* About Section */
+section {
+    padding: 70px 10%;
+}
+
+.about, .skills, .contact {
+    text-align: center;
+}
+
+section h1 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+section h1 span {
+    color: #00eeff;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #c7d5df;
+    line-height: 2;
+}
+
+/* Skills */
+.skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-box {
+    width: 220px;
+    background: #102b3c;
+    padding: 30px 20px;
+    border-radius: 15px;
+    border: 1px solid #00eeff;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00eeff;
+}
+
+.skill-box h3 {
+    color: #00eeff;
+    margin-bottom: 15px;
+}
+
+.skill-box p {
+    color: #c7d5df;
+    line-height: 1.6;
+}
+
+/* Contact */
+.contact p {
+    margin: 15px;
+    color: #c7d5df;
+}
+
+/* Footer */
+footer {
+    background: #05131e;
+    padding: 25px;
+    text-align: center;
+    color: #00eeff;
+}
+
+/* Mobile Responsive */
+@media(max-width: 750px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 7px;
+        font-size: 13px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 30px;
+    }
+
+    .home-img img {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">AZHAR.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Home -->
+<section class="home" id="home">
+
+    <div class="home-text">
+
+        <h3>Hello, Welcome To My Portfolio</h3>
+
+        <h1>I'm <span>Muhammad Azhar</span></h1>
+
+        <h2>Computer Student</h2>
+
+        <p>
+            I am a passionate Computer Student.
+            I love learning about technology,
+            programming and web development.
+            My dream is to become a professional
+            Web Developer.
+        </p>
+
+        <a href="#about" class="btn">About Me</a>
+
+    </div>
+
+    <div class="home-img">
+        <img src="data:image/jpeg;base64,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" alt="Muhammad Azhar">
+    </div>
+
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+
+    <h1>About <span>Me</span></h1>
+
+    <p>
+        My name is Muhammad Azhar.
+        I am a Computer Student.
+
+        I am interested in Computer Science,
+        Information Technology, Web Development
+        and Programming.
+
+        I always try to learn new things and
+        improve my knowledge and skills.
+        My goal is to build a successful career
+        in the computer field.
+    </p>
+
+</section>
+
+<!-- Skills -->
+<section class="skills" id="skills">
+
+    <h1>My <span>Knowledge</span></h1>
+
+    <div class="skill-container">
+
+        <div class="skill-box">
+            <h3>HTML</h3>
+            <p>Learning Web Page Structure</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>CSS</h3>
+            <p>Learning Web Design</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Computer</h3>
+            <p>Computer Basics and Windows</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Programming</h3>
+            <p>Learning Python and JavaScript</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+
+    <h1>Contact <span>Me</span></h1>
+
+    <p>Name: Muhammad Azhar</p>
+    <p>Profession: Computer Student</p>
+    <p>Email: Your Email Here</p>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Muhammad Azhar | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
